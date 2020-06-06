@@ -1,0 +1,45 @@
+<h> hi </h>
+
+<!--
+    <a> is an anchor element.
+    Can put href inside the anchor element to go to links.
+    Links can be external or internal.
+    For external, just do href='url'
+    Ex: <a href = 'url'> Write the hypertext here </a>
+    Need to include 'https://' in the link, or it will
+    try to go to a file in the website's current directory
+    with the same name as the URL you put.
+
+    For internal, put href = '#some id', and the user will
+    jump to the element with the id='some id'. You can also
+    add target = '_blank' to either of these to make the
+    link open in a new page.
+-->
+
+<ol>
+    <li>
+        <a href = "https://google.com"
+           target = "_blank">
+        External Link
+        </a>
+    </li>
+    <li>
+        <a href = "#bottom">
+        Internal Link
+        </a>
+    </li>
+    <li>
+        <a href = "index.htm"
+           target = "_blank">
+        Go to Index file
+        </a>
+    </li>
+    <li>
+        <a href = "https://www.adithyasolai.com"
+           target = "_blank">
+        Go to adithyasolai.com
+        </a>
+    </li>
+</ol>
+
+<p id = 'bottom'> this is the bottom. </p>
