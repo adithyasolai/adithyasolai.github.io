@@ -5,17 +5,29 @@
   rel="stylesheet" 
   type="text/css">
 <style>
-.banger_txt {
-  font-family: Bangers, 'Courier New', Courier, monospace;
-}
+  .banger_txt {
+    font-family: Bangers, 'Courier New', Courier, monospace;
+  }
+
+  .light-blue-background {
+    background-color:aliceblue;
+  }
+
+  #logo img{
+    height: 50px;
+    width: 50px;
+  }
 </style>
 </head>
 
-<body>
+<body class = "light-blue-background">
 <h1>Adithya Solai</h1>
-<p> Just getting started with web development. </p>
-<p> Still in the process of building out this site. </p>
-<p class = "banger_txt"> Hope you enjoy what is already here! </p>
+<div >
+  <p> Just getting started with web development. </p>
+  <p> Still in the process of building out this site. </p>
+  <p class = "banger_txt"> Hope you enjoy what is already here! </p>
+</div>
+
 
 <br>
 
@@ -46,6 +58,15 @@ made in
 
 <br>
 
+<div id = "logo">
+  <a>
+    <!--
+      Here, the id styling took precedence over the 
+      height/width properties of the img element itself.
+    -->
+    <img src="AS_logo.PNG" height = "100" width = "100" alt = "Adithya Solai Logo">
+  </a>
+</div>
 
 </body>
 </html>
