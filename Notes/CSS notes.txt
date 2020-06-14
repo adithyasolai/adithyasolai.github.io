@@ -1,0 +1,19 @@
+Styling precedence:
+In your style sheet/style element, the style class
+that is written further down the page has more precendence
+than the ones before it.
+
+ID attributes and corresponding id classes have precedence over
+normal class declarations. ID classes look like this:
+#id_name {
+    color: red;
+}
+
+Doing in-line styling has precendence over the two mentioned above.
+
+Putting a "!important" in a class' declaration gives it more
+precendece than anything.
+Ex:
+.red_text {
+    color: red !important;
+}

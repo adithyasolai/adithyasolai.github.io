@@ -17,12 +17,28 @@
     height: 50px;
     width: 50px;
   }
+
+  #shadowed {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 500px;
+  }
+
+  iframe {
+    display: block;
+  }
+  .centered {
+    margin: auto;
+  }
+
 </style>
 </head>
 
-<body class = "light-blue-background">
-<h1>Adithya Solai</h1>
-<div >
+<body class = "light-blue-background centered">
+<h1 id="shadowed" class = "centered">
+    Adithya Solai
+</h1>
+
+<div id = "shadowed" class = "centered">
   <p> Just getting started with web development. </p>
   <p> Still in the process of building out this site. </p>
   <p class = "banger_txt"> Hope you enjoy what is already here! </p>
@@ -31,7 +47,7 @@
 
 <br>
 
-<p> 
+<p id="shadowed" class = "centered"> 
 <a href = "cat_app.htm"
     target = "_blank"
     style = "color: red;">
@@ -47,14 +63,16 @@ made in
 
 <br>
 
+<p id = "shadowed" class = "centered">
 <a href = "Adithya Solai Resume.pdf"
-    target = "_blank">
+    target = "_blank" >
   Resume
 </a>
+</p>
 
 <br>
 
-<iframe src="Adithya Solai Resume.pdf" height="600" width="600"></iframe>
+<iframe id="shadowed" class = "centered" src="Adithya Solai Resume.pdf" height="600" width="600"></iframe>
 
 <br>
 
