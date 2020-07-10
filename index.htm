@@ -4,87 +4,129 @@
   <link href="https://fonts.googleapis.com/css?family=Bangers" 
   rel="stylesheet" 
   type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" 
+  rel="stylesheet" 
+  type="text/css">
 <style>
   .banger_txt {
     font-family: Bangers, 'Courier New', Courier, monospace;
+  }
+
+  .abel_txt {
+    font-family: Abel, 'Courier New', Courier, monospace;
+  }
+
+  .tisa_txt {
+    font-family: ff-tisa-sans-web-pro, sans-serif;
   }
 
   .light-blue-background {
     background-color:aliceblue;
   }
 
-  #logo img{
-    height: 50px;
-    width: 50px;
+  .resume_background {
+    background-color:rgba(238, 157, 51, 0.856);
   }
 
-  #shadowed {
+  .github_background {
+    background-color:rgba(27, 197, 35, 0.856);
+  }
+
+  .linkedin_background {
+    background-color:rgba(62, 129, 238, 0.856);
+  }
+
+  .shadowed {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    width: 500px;
   }
 
-  iframe {
+  .link_block {
     display: block;
-  }
-  .centered {
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    text-align: center;
   }
 
+  .centered-block {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quarter-width {
+    width: 25%;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .centered-image {
+    display: block;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .centered-text {
+    text-align: center;
+    padding-top: 15px;
+  }
 </style>
 </head>
 
-<body class = "light-blue-background centered">
-<h1 id="shadowed" class = "centered">
-    Adithya Solai
-</h1>
+<body class = "light-blue-background centered-block tisa_txt">
 
-<div id = "shadowed" class = "centered">
-  <p> Just getting started with web development. </p>
-  <p> Still in the process of building out this site. </p>
-  <p class = "banger_txt"> Hope you enjoy what is already here! </p>
-</div>
+  <div class = "centered-block shadowed">
+    <h1 class = "centered-text">
+      Adithya Solai
+    </h1>
 
+    <a>
+      <img class = "centered-block full-width" src="images/Adithya_Headshot.png" alt = "Adithya Solai Logo">
+    </a>
+  </div>
+  
 
-<br>
+  <br>
+  <!-- GitHub Link Block -->
 
-<p id="shadowed" class = "centered"> 
-<a href = "cat_app.htm"
-    target = "_blank"
-    style = "color: red;">
-    Cat App</a>
+  <div class = "centered-block shadowed">
+    <a  class = "link_block resume_background" 
+        href = "Adithya Solai Resume.pdf">
+      <h3>
+        My Resume
+      </h3>
+    </a>
+    <a  class = "link_block github_background" 
+        href = "https://github.com/adithyasolai">
+      <h3>
+        My GitHub
+      </h3>
+    </a>
+    <a  class = "link_block linkedin_background" 
+        href = "https://www.linkedin.com/in/adithya-solai/">
+      <h3>
+        My LinkedIn
+      </h3>
+    </a>
+  </div>
 
-made in
+  <br>
 
-<a href = "https://www.freecodecamp.org/learn"
-    target = "_blank"
-    style = "color:cornflowerblue;">
-  freecodecamp.org </a>
-</p>
-
-<br>
-
-<p id = "shadowed" class = "centered">
-<a href = "Adithya Solai Resume.pdf"
-    target = "_blank" >
-  Resume
-</a>
-</p>
-
-<br>
-
-<iframe id="shadowed" class = "centered" src="Adithya Solai Resume.pdf" height="600" width="600"></iframe>
-
-<br>
-
-<div id = "logo">
-  <a>
-    <!--
-      Here, the id styling took precedence over the 
-      height/width properties of the img element itself.
-    -->
-    <img src="AS_logo.PNG" height = "100" width = "100" alt = "Adithya Solai Logo">
-  </a>
-</div>
+  <div id = "logo">
+    <a>
+      <!--
+        Here, the id styling took precedence over the 
+        height/width properties of the img element itself.
+      -->
+      <img class = "centered-image half-width" src="images/AS_logo.PNG" height = "100" width = "100" alt = "Adithya Solai Logo">
+    </a>
+  </div>
 
 </body>
 </html>
